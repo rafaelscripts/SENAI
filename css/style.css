@@ -1,0 +1,370 @@
+/* ========== RESET ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+/* ========== BODY ========== */
+body {
+    background-color: #6f4f28;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* ========== CONTAINER ========== */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* ========== BG COLORS ========== */
+.bg-gradient {
+    background: linear-gradient(to right, #a0522d, #deb887);
+}
+
+.bg-black {
+    background-color: #3e2a1f;
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+/* ========== HELPERS ========== */
+.radius {
+    border-radius: 8px;
+}
+
+/* ========== CABEÇALHO ========== */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #6f4f28;
+}
+
+.btn-menu {
+    display: none; /* Ocultar em telas maiores */
+    width: 56px;
+    height: 56px;
+    background-color: #8b4513;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 56px;
+    cursor: pointer;
+}
+
+/* ========== MENU ========== */
+.menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    padding-top: 0; /* Remover padding superior para elevar o menu */
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    padding: 10px 0; /* Reduzido padding para itens do menu */
+}
+
+.menu li a {
+    color: #fff;
+    font-size: 1.5em;
+    text-decoration: none;
+    display: block; /* Melhor para clicar */
+    padding: 15px;
+    border: 2px solid #6f4f28; /* Bordas marrons */
+    border-radius: 8px; /* Ajustar para borda arredondada */
+    transition: color 0.3s, border-color 0.3s;
+}
+
+.menu li a:hover {
+    color: #deb887;
+    border-color: #deb887; /* Alterar cor da borda ao passar o mouse */
+}
+
+.btn-close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 2em;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* ========== BANNER ========== */
+.banner {
+    background: url('css/banner.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.title h2 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.title h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 1.2em;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.btn-cadastrar {
+    background-color: #8b4513;
+}
+
+.btn-cadastrar:hover {
+    background-color: #6f4f28;
+}
+
+.btn-sobre {
+    background-color: #3e2a1f;
+}
+
+.btn-sobre:hover {
+    background-color: #6f4f28;
+}
+
+/* ========== SERVIÇOS ========== */
+.servicos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.servico {
+    flex: 1 1 calc(33.333% - 20px);
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.servico img {
+    width: 100%;
+    height: auto;
+}
+
+.inner {
+    padding: 20px;
+}
+
+.inner a {
+    font-size: 1.2em;
+    color: #6f4f28;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.inner a:hover {
+    color: #8b4513;
+}
+
+.inner p {
+    color: #666;
+}
+
+/* ========== NEWSLETTER ========== */
+.newsletter {
+    background-color: #3e2a1f;
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.newsletter h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.newsletter h3 {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newsletter input {
+    width: 80%;
+    max-width: 500px;
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+.newsletter button {
+    width: 80%;
+    max-width: 500px;
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    background-color: #8b4513;
+    color: #fff;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.newsletter button:hover {
+    background-color: #6f4f28;
+}
+
+/* ========== RODAPÉ ========== */
+footer {
+    background: linear-gradient(to right, #8b4513, #deb887);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.social-icons {
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 1.5em;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #deb887;
+}
+
+.copyright {
+    font-size: 0.9em;
+}
+
+/* ========== MOBILE FIRST ========== */
+/* SMALL DEVICES - SMARTPHONES */
+@media screen and (min-width: 480px) {
+    .btn-menu {
+        display: block;
+    }
+
+    .servico {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+/* SMALL DEVICES - TABLETS */
+@media screen and (min-width: 768px) {
+    .btn-menu {
+        display: none;
+    }
+
+    .servico {
+        flex: 1 1 calc(33.333% - 20px);
+    }
+
+    .newsletter input {
+        width: 60%;
+        margin-right: 10px;
+    }
+
+    .newsletter button {
+        width: 30%;
+    }
+}
+
+/* MEDIUM DEVICES - DESKTOPS */
+@media screen and (min-width: 960px) {
+    .title {
+        text-align: left;
+    }
+
+    .btn {
+        font-size: 1.5em;
+    }
+}
+
+/* LARGE DEVICES - WIDE SCREENS */
+@media screen and (min-width: 1280px) {
+    .menu {
+        display: block;
+        position: static;
+        width: auto;
+        height: auto; /* Ajustado para altura automática */
+        background-color: transparent;
+        box-shadow: none;
+        padding-top: 0; /* Remover padding superior para elevar o menu */
+    }
+
+    .menu ul {
+        display: flex;
+    }
+
+    .menu li {
+        margin-right: 20px;
+    }
+
+    .menu li a {
+        color: #6f4f28;
+        font-size: 1em;
+        padding: 15px;
+        border: 2px solid #6f4f28; /* Bordas marrons */
+        border-radius: 8px;
+    }
+
+    .menu li a:hover {
+        color: #8b4513;
+        border-color: #8b4513; /* Alterar cor da borda ao passar o mouse */
+    }
+}
